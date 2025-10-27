@@ -1,0 +1,16 @@
+#Python pip packages
+/backend/venv
+/backend/env
+/backend/.venv
+
+/backend/__pycache__
+/backend/migrations/__pycache__
+/backend/models/__pycache__
+/backend/routes/__pycache__
+
+
+/backend/migrations/versions
+
+#Environment's
+.env
+/backend/.env
