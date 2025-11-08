@@ -5,12 +5,7 @@ from flask_bcrypt import Bcrypt
 from flask_jwt_extended import JWTManager
 from flask_cors import CORS
 from config import Config
-
-# Initialize extensions (no app yet)
-db = SQLAlchemy()
-migrate = Migrate()
-bcrypt = Bcrypt()
-jwt = JWTManager()
+from extensions import db, migrate, bcrypt, jwt 
 
 def create_app():
     app = Flask(__name__)
@@ -41,4 +36,4 @@ def create_app():
 
 if __name__ == "__main__":
     app = create_app()
-    app.run(debug=True)
+    app.run(debug=True, port=5005)
